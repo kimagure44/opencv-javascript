@@ -7,16 +7,19 @@
   <link rel="stylesheet" href="./css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 </head>
-<body>
-  <div class="container">
-    <div class="img box">
-      <img alt="Sin imagen" />
+  <body>
+    <div class="box">
+      <input type="file" id="file" name="file" />
     </div>
-    <div class="file box">
-      <input type="file" name="file" />
+    <p>IMG</p>
+    <div class="box">
+      <img id="image" />
     </div>
-  </div>
-  <script src="./js/opencv.js"></script>
-  <script src="./js/index.js"></script>
-</body>
+    <p>CANVAS OPENCV</p>
+    <div class="canvas">
+      <canvas id="canvasOpenCV"></canvas>
+    </div>
+    <script src="./js/index.js"></script>
+    <script async src="./js/opencv.js" onload="openCV()"></script>
+  </body>
 </html>
